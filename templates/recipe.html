@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ recipe_name }}</title>
+    <style>
+        .recipe-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .ingredients,
+        .instructions,
+        .notes {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .ingredients {
+            background-color: #f2f2f2;
+        }
+
+        .notes {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ recipe_name }}</h1>
+
+    <div class="recipe-container">
+        <div class="ingredients">
+            <h2>Ingrediencie:</h2>
+            <ul>
+                {% for elem in ingredients %}
+                <li>{{ elem }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="instructions">
+            <h2>Postup:</h2>
+            <ol>
+                {% for elem in instructions %}
+                <li>{{ elem }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+    {% if notes != None %}
+        <div class="notes">
+            <h2>Poznámky:</h2>
+            <ul>
+                {% for elem in notes %}
+                <li>{{ elem }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</body>
+</html>
