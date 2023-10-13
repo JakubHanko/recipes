@@ -26,7 +26,7 @@ def get_recipe_ingredients(document):
 def get_list_from_section(document, section):
     section_found = False
     for node in document.children:
-        if type(node) is Heading:
+        if type(node) is mb.Heading:
             section_found = node.children[0].children == section
 
         if type(node) is mb.List and section_found:
