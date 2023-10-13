@@ -6,7 +6,6 @@ from typing import List
 import marko
 import marko.block as mb
 from jinja2 import Environment, PackageLoader, select_autoescape
-from marko.block import Heading, List
 
 NAME_HEADING_LEVEL = 1
 INGREDIENTS_STR = "Ingrediencie"
