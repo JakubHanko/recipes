@@ -85,7 +85,7 @@ if __name__ == "__main__":
             ingredients=recipe.ingredients,
             instructions=recipe.instructions,
             notes=recipe.notes,
-        ).dump(f"docs/{recipe.slug}.html")
+        ).dump(f"{recipe.slug}.html")
 
     index_template = env.get_template("index.html")
-    index_template.stream(recipes=recipes).dump("docs/index.html")
+    index_template.stream(recipes=recipes).dump("index.html")
