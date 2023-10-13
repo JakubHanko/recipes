@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepty</title>
+</head>
+<body>
+    <main>
+        <h1>Recepty</h1>
+        <ul>
+            {% for recipe in recipes %}
+                <li><a href="{{ recipe.slug }}.html">{{ recipe.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>
