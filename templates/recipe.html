@@ -10,7 +10,7 @@
     <h1>{{ recipe_name }}</h1>
     <div class="recipe-container">
         <div class="ingredients">
-            <h2>Ingrediencie:</h2>
+            <h2>Ingredients:</h2>
             <ul>
                 {% for elem in ingredients %}
                 <li>{{ elem }}</li>
@@ -18,7 +18,7 @@
             </ul>
         </div>
         <div class="instructions">
-            <h2>Postup:</h2>
+            <h2>Instructions:</h2>
             <ol>
                 {% for elem in instructions %}
                 <li>{{ elem }}</li>
@@ -28,7 +28,7 @@
     </div>
     {% if notes != None %}
         <div class="notes">
-            <h2>Poznámky:</h2>
+            <h2>Notes:</h2>
             <ul>
                 {% for elem in notes %}
                 <li>{{ elem }}</li>

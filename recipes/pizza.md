@@ -1,21 +1,21 @@
-# Pizza cesto
+# Pizza dough
 
 ---
 
-## Ingrediencie
-- sáčok/kocka droždia
-- 625 g (4½ hrnčeka) hladkej múky
-- 2 ČL soli
-- 2 PL olivového oleja
-- 420 mL (1¾ hrnčeka) vlažnej až chladnej vody
+## Ingredients
+- 1 pack/cube of dry active yeast
+- 625 g (4½ cups) flour
+- 2 tsp salt
+- 2 tbsp olive oil
+- 420 mL (1¾ hrnčeka) lukewarm to cold water
 
 ---
 
-## Postup
-1. Nalej vodu do misky a nasyp tam celé droždie. Nechaj rozpustiť (cca 2 minúty).
-2. Daj tam všetky ostatné suroviny a zmiešaj to do cesta.
-3. Vymies cesto.
-4. Nechaj vykysnúť vo vymastenej vzduchotesnej nádobe. Buď v teple, alebo cez noc v chladničke.
+## Instructions
+1. Put the water into a mixing bowl. Sprinkle yeast and let it dissolve (about 2 minutes).
+2. Put the rest of the ingredients into the bowl and combine them into a dough.
+3. Knead the dough.
+4. Put the dough into a greased up airtight container. Let is rise overnight in the fridge.
 
-## Poznámky
-- Do cesta vieme pridať aj nejakú zmes korenia (špagetové/granulovaný cesnak ...) pre zaujímavejšiu chuť.
+## Notes
+- You can put any spice mix (spaghetti, granulated garlic, ...) into the dough for a more interesting flavour.

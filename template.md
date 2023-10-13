@@ -1,9 +1,9 @@
-# Meno
+# Name
 
 ---
 
-## Ingrediencie
+## Ingredients
 
 ---
 
-## Postup
+## Instructions
