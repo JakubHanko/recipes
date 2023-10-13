@@ -8,9 +8,6 @@ import marko.block as mb
 from jinja2 import Environment, PackageLoader, select_autoescape
 
 NAME_HEADING_LEVEL = 1
-INGREDIENTS_STR = "Ingrediencie"
-INSTRUCTIONS_STR = "Postup"
-NOTES_STR = "Poznámky"
 
 
 def get_recipe_name(document):
@@ -20,7 +17,7 @@ def get_recipe_name(document):
 
 
 def get_recipe_ingredients(document):
-    return get_list_from_section(document, INGREDIENTS_STR)
+    return get_list_from_section(document, "Ingredients")
 
 
 def get_list_from_section(document, section):
@@ -34,11 +31,11 @@ def get_list_from_section(document, section):
 
 
 def get_recipe_instructions(document):
-    return get_list_from_section(document, INSTRUCTIONS_STR)
+    return get_list_from_section(document, "Instructions")
 
 
 def get_recipe_notes(document):
-    return get_list_from_section(document, NOTES_STR)
+    return get_list_from_section(document, "Notes")
 
 
 def get_recipe_slug(recipe_filename):
