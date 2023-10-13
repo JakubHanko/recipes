@@ -3,14 +3,14 @@
 ---
 
 ## Ingrediencie
-- *2 hrnčeky* hladkej múky
-- *1 hrnček* strúhaného kokosu
-- *1 hrnček* krupicového cukru
-- *1 hrnček* mlieka
-- *1 hrnček* rastlinného oleja
-- *1 balíček* prášku do pečiva (kypriaci prášok)
-- *1 balíček* vanilkového cukru
-- *3 ks* vajcia
+- 2 hrnčeky hladkej múky
+- 1 hrnček strúhaného kokosu
+- 1 hrnček krupicového cukru
+- 1 hrnček mlieka
+- 1 hrnček rastlinného oleja
+- 1 balíček prášku do pečiva (kypriaci prášok)
+- 1 balíček vanilkového cukru
+- 3 ks vajcia
 - kakao
 
 ---

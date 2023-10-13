@@ -4,20 +4,20 @@
 
 ## Ingrediencie
 
-- *1* veľká cibuľa
-- *1* červená paprika
-- *2* strúčiky cesnaku
-- *1 PL* oleja
-- *1 ČL* chili prášku
-- *1 ČL* papriky
-- *1 ČL* drveného kmínu
-- *500 g* mletého hovädzieho mäsa
-- *1* kocka hovädzieho bujónu
-- *400 g* krájaných paradajok v konzerve
-- *½ ČL* majoránky
-- *1 ČL* cukru (alebo 1-2 štvorčeky tmavej čokolády)
-- *2 PL* paradajkového pretlaku
-- *410 g* red kidney fazúľ
+- 1 veľká cibuľa
+- 1 červená paprika
+- 2 strúčiky cesnaku
+- 1 PL oleja
+- 1 ČL chili prášku
+- 1 ČL papriky
+- 1 ČL drveného kmínu
+- 500 g mletého hovädzieho mäsa
+- 1 kocka hovädzieho bujónu
+- 400 g krájaných paradajok v konzerve
+- ½ ČL majoránky
+- 1 ČL cukru (alebo 1-2 štvorčeky tmavej čokolády)
+- 2 PL paradajkového pretlaku
+- 410 g red kidney fazúľ
 #### Voliteľné
 - ryža
 - cheddar

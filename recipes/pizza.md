@@ -4,10 +4,10 @@
 
 ## Ingrediencie
 - sáčok/kocka droždia
-- *625 g* (4½ hrnčeka) hladkej múky
-- *2 ČL* soli
-- *2 PL* olivového oleja
-- *420 mL* (1¾ hrnčeka) vlažnej až chladnej vody
+- 625 g (4½ hrnčeka) hladkej múky
+- 2 ČL soli
+- 2 PL olivového oleja
+- 420 mL (1¾ hrnčeka) vlažnej až chladnej vody
 
 ---
 
