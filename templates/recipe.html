@@ -1,32 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+{% block head %}
     <title>{{ recipe_name }}</title>
-    <style>
-        .recipe-container {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .ingredients,
-        .instructions,
-        .notes {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .ingredients {
-            background-color: #f2f2f2;
-        }
-
-        .notes {
-            background-color: #e0e0e0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="templates/styles.css">
+{% endblock %}
 </head>
 <body>
     <h1>{{ recipe_name }}</h1>
-
     <div class="recipe-container">
         <div class="ingredients">
             <h2>Ingrediencie:</h2>
