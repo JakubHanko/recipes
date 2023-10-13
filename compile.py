@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from typing import List
 
 import marko
+import marko.block as mb
 from jinja2 import Environment, PackageLoader, select_autoescape
 from marko.block import Heading, List
 
@@ -15,7 +16,7 @@ NOTES_STR = "Poznámky"
 
 def get_recipe_name(document):
     for node in document.children:
-        if type(node) is Heading and node.level == NAME_HEADING_LEVEL:
+        if type(node) is mb.Heading and node.level == NAME_HEADING_LEVEL:
             return node.children[0].children
 
 
@@ -29,7 +30,7 @@ def get_list_from_section(document, section):
         if type(node) is Heading:
             section_found = node.children[0].children == section
 
-        if type(node) is marko.block.List and section_found:
+        if type(node) is mb.List and section_found:
             return [item.children[0].children[0].children for item in node.children]
 
 
