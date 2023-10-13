@@ -11,3 +11,5 @@
 * [ ] Štýly stránok
 * [ ] Podpora obrázkov
 * [ ] Nejaký krátky popis do README
+* [ ] Radenie a rozumné grupovanie receptov
+* [ ] Tagy k jednotlivým receptom?
