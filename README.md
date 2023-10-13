@@ -6,4 +6,8 @@
   * [ ] Lotus cheesecake
   * [ ] Reese's cheesecake
   * [ ] Toffifee cheesecake
-* Kompilácia receptov do HTML/PDF v peknom formáte (ingrediencie v ľavom stĺpci, postup v pravom, atď.)
+* [ ] Rozhodnúť sa v akom jazyku to všetko bude
+* [ ] Rozdeliť compile.py
+* [ ] Štýly stránok
+* [ ] Podpora obrázkov
+* [ ] Nejaký krátky popis do README
