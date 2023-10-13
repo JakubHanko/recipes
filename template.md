@@ -7,5 +7,3 @@
 ---
 
 ## Instructions
-
-## Notes
