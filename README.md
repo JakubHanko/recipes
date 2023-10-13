@@ -2,14 +2,13 @@
 
 ## Todo
 
-* Vyskúšať a pridať recepty
+* Try the following recipes
   * [ ] Lotus cheesecake
   * [ ] Reese's cheesecake
   * [ ] Toffifee cheesecake
-* [ ] Rozhodnúť sa v akom jazyku to všetko bude
-* [ ] Rozdeliť compile.py
-* [ ] Štýly stránok
-* [ ] Podpora obrázkov
-* [ ] Nejaký krátky popis do README
-* [ ] Radenie a rozumné grupovanie receptov
-* [ ] Tagy k jednotlivým receptom?
+* [ ] Refactor compile.py
+* [ ] Style of the webpages
+* [ ] Image support
+* [ ] Short description into README
+* [ ] Sorting and grouping of the recipes
+* [ ] Recipe tags?
