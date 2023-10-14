@@ -5,6 +5,7 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 
 from recipe_model import recipe_category_format
 from recipe_parser import parse_recipe_file
+from recipe_writer import write_index, write_recipes
 
 if __name__ == "__main__":
     recipe_filenames = glob.glob("recipes/*.md")
@@ -16,21 +17,10 @@ if __name__ == "__main__":
     env = Environment(loader=PackageLoader("compile"), autoescape=select_autoescape())
     env.filters["recipe_category_format"] = recipe_category_format
 
-    template = env.get_template("recipe.html")
+    if not os.path.exists("docs/"):
+        os.makedirs("docs")
 
-    if not os.path.exists('docs/'):
-        os.makedirs('docs')
-
-    for recipe in recipes:
-        template.stream(
-            recipe_name=recipe.name,
-            ingredients=recipe.ingredients,
-            instructions=recipe.instructions,
-            notes=recipe.notes,
-            image=recipe.img_path,
-        ).dump(f"docs/{recipe.slug}.html")
-
-    index_template = env.get_template("index.html")
+    write_recipes(env, recipes)
 
     recipes_dict = {}
 
@@ -39,4 +29,5 @@ if __name__ == "__main__":
             recipes_dict[recipe.category] = []
 
         recipes_dict[recipe.category].append(recipe)
-    index_template.stream(recipes=recipes_dict).dump("docs/index.html")
+
+    write_index(env, recipes_dict)
