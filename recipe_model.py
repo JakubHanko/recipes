@@ -17,13 +17,13 @@ class Recipe:
     name: str
     ingredients: list[str]
     instructions: list[str]
-    notes: list[str]
+    notes: list[str] | None
     slug: str
-    img_path: str
+    img_path: str | None
     category: RecipeCategory
 
 
-def recipe_category_format(category):
+def recipe_category_format(category: RecipeCategory) -> str:
     out = str(category)
     out = out.split(".")[-1]
     out = out.lower().capitalize()

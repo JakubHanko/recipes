@@ -1,4 +1,9 @@
-def write_recipes(environment, recipes):
+from jinja2 import Environment
+
+from recipe_model import Recipe, RecipeCategory
+
+
+def write_recipes(environment: Environment, recipes: list[Recipe]) -> None:
     template = environment.get_template("recipe.html")
 
     for recipe in recipes:
@@ -11,7 +16,9 @@ def write_recipes(environment, recipes):
         ).dump(f"docs/{recipe.slug}.html")
 
 
-def write_index(environment, recipes):
+def write_index(
+    environment: Environment, recipes: dict[RecipeCategory, list[Recipe]]
+) -> None:
     template = environment.get_template("index.html")
 
     template.stream(recipes=recipes).dump("docs/index.html")
