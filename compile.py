@@ -1,4 +1,5 @@
 import glob
+import os
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
@@ -17,6 +18,9 @@ if __name__ == "__main__":
 
     template = env.get_template("recipe.html")
 
+    if not os.path.exists('docs/'):
+        os.makedirs('docs')
+
     for recipe in recipes:
         template.stream(
             recipe_name=recipe.name,
@@ -24,7 +28,7 @@ if __name__ == "__main__":
             instructions=recipe.instructions,
             notes=recipe.notes,
             image=recipe.img_path,
-        ).dump(f"{recipe.slug}.html")
+        ).dump(f"docs/{recipe.slug}.html")
 
     index_template = env.get_template("index.html")
 
@@ -35,4 +39,4 @@ if __name__ == "__main__":
             recipes_dict[recipe.category] = []
 
         recipes_dict[recipe.category].append(recipe)
-    index_template.stream(recipes=recipes_dict).dump("index.html")
+    index_template.stream(recipes=recipes_dict).dump("docs/index.html")

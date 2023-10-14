@@ -47,7 +47,8 @@ def get_recipe_slug(recipe_filename):
 def get_recipe_image_path(document):
     for node in document.children:
         if type(node) is Paragraph:
-            return f"{os.path.join('recipes', node.children[0].dest)}"
+            # The resulting templates get rendered to docs/ -- hende the '..'
+            return f"{os.path.join('..', 'recipes', node.children[0].dest)}"
 
 
 def get_recipe_category(post):
