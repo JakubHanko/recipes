@@ -3,7 +3,7 @@ import os
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
-from recipe_model import recipe_category_format
+from recipe_model import Recipe, RecipeCategory, recipe_category_format
 from recipe_parser import parse_recipe_file
 from recipe_writer import write_index, write_recipes
 
@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     write_recipes(env, recipes)
 
-    recipes_dict = {}
+    recipes_dict: dict[RecipeCategory, list[Recipe]] = {}
 
     for recipe in recipes:
         if recipe.category not in recipes_dict:

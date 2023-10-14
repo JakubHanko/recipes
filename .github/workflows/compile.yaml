@@ -21,9 +21,8 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.1.4
         with:
-          python-version: 3.9
+          python-version: 3.12.0
           architecture: x64
-
       - name: Install dependencies
         run: python3 -m pip install -r requirements.txt
 
