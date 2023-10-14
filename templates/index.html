@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <h1>Recipes</h1>
+    <div class="container">
+        <h1 class="text-center">Recipe Index</h1>
         <ul>
             {% for recipe in recipes %}
                 <li><a href="{{ recipe.slug }}.html">{{ recipe.name }}</a></li>
             {% endfor %}
         </ul>
-    </main>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
