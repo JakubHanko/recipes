@@ -1,3 +1,7 @@
+---
+category: Dessert
+---
+
 # Coconut mug marble cake (Bábovka)
 
 ---

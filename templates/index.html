@@ -14,11 +14,17 @@
 <body>
     <div class="container">
         <h1 class="text-center">Recipe Index</h1>
-        <ul>
-            {% for recipe in recipes %}
-                <li><a href="{{ recipe.slug }}.html">{{ recipe.name }}</a></li>
+        <div>
+            {% for category, recipes in recipes.items() %}
+                <h2>{{ category|recipe_category_format }}</h2>
+                <ul>
+                    {% for recipe in recipes %}
+                        <li><a href="{{ recipe.slug }}.html">{{ recipe.name }}</a></li>
+                    {% endfor %}
+                </ul>
             {% endfor %}
-        </ul>
+            </div>
+        </div>
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

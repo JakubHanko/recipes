@@ -1,3 +1,7 @@
+---
+category: Main Course
+---
+
 # Pizza dough
 
 ---
