@@ -45,6 +45,12 @@ def get_recipe_slug(recipe_filename):
     return recipe_filename.replace("_", "-")
 
 
+def get_recipe_image_path(document):
+    for node in document.children:
+        if type(node) is mb.Paragraph:
+            return f"{os.path.join('recipes', node.children[0].dest)}"
+
+
 def parse_recipe_file(recipe_filename):
     with open(recipe_filename) as f:
         recipe_doc = marko.parse(f.read())
@@ -55,6 +61,7 @@ def parse_recipe_file(recipe_filename):
         instructions=get_recipe_instructions(recipe_doc),
         notes=get_recipe_notes(recipe_doc),
         slug=get_recipe_slug(recipe_filename),
+        img_path=get_recipe_image_path(recipe_doc),
     )
 
 
@@ -65,6 +72,7 @@ class Recipe:
     instructions: List[str]
     notes: List[str]
     slug: str
+    img_path: str
 
 
 if __name__ == "__main__":
@@ -84,6 +92,7 @@ if __name__ == "__main__":
             ingredients=recipe.ingredients,
             instructions=recipe.instructions,
             notes=recipe.notes,
+            image=recipe.img_path,
         ).dump(f"{recipe.slug}.html")
 
     index_template = env.get_template("index.html")

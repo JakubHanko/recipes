@@ -24,7 +24,6 @@
 - avocado
 - sweetcorn
 - white beans
----
 
 ## Instructions
 1. Chop the vegetables.

@@ -13,8 +13,6 @@
 - 3 pcs eggs
 - cocoa powder
 
----
-
 ## Instructions
 1. Mix the dry ingredients.
 2. Add the rest of the ingredients (besides cocoa powder) into the mixture and mix well.

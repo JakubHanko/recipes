@@ -9,8 +9,6 @@
 - 2 tbsp olive oil
 - 420 mL (1¾ hrnčeka) lukewarm to cold water
 
----
-
 ## Instructions
 1. Put the water into a mixing bowl. Sprinkle yeast and let it dissolve (about 2 minutes).
 2. Put the rest of the ingredients into the bowl and combine them into a dough.
