@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from enum import Enum
-from typing import List
 
 
 class RecipeCategory(Enum):
@@ -16,9 +15,9 @@ class RecipeCategory(Enum):
 @dataclass
 class Recipe:
     name: str
-    ingredients: List[str]
-    instructions: List[str]
-    notes: List[str]
+    ingredients: list[str]
+    instructions: list[str]
+    notes: list[str]
     slug: str
     img_path: str
     category: RecipeCategory
