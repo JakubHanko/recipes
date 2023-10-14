@@ -22,3 +22,15 @@ class Recipe:
     slug: str
     img_path: str
     category: RecipeCategory
+
+
+def recipe_category_format(category):
+    out = str(category)
+    out = out.split(".")[-1]
+    out = out.lower().capitalize()
+    out = out.replace("_", " ")
+
+    if category not in [RecipeCategory.BREAKFAST, RecipeCategory.OTHER]:
+        out += "s"
+
+    return out

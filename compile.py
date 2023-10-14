@@ -2,21 +2,8 @@ import glob
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
-from recipe_model import RecipeCategory
+from recipe_model import recipe_category_format
 from recipe_parser import parse_recipe_file
-
-
-def recipe_category_format(category):
-    out = str(category)
-    out = out.split(".")[-1]
-    out = out.lower().capitalize()
-    out = out.replace("_", " ")
-
-    if category not in [RecipeCategory.BREAKFAST, RecipeCategory.OTHER]:
-        out += "s"
-
-    return out
-
 
 if __name__ == "__main__":
     recipe_filenames = glob.glob("recipes/*.md")
