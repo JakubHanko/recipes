@@ -72,6 +72,8 @@ if __name__ == "__main__":
 
     recipes = [parse_recipe_file(c) for c in recipe_filenames]
 
+    recipes.sort(key=lambda x: x.name)
+
     env = Environment(loader=PackageLoader("compile"), autoescape=select_autoescape())
 
     template = env.get_template("recipe.html")
