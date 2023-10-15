@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../templates/styles.css">
     <style>
-        body {
-            background-color: #f5f5f5;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
+    <div class="container text-center my-5">
+        <h1 class="display-4">Recipe Index</h1>
+    </div>
     <div class="container">
-        <h1 class="text-center">Recipe Index</h1>
-        <div>
-            {% for category, recipes in recipes.items() %}
+        {% for category, recipes in recipes.items() %}
+            <div class="recipe-container">
                 <h2>{{ category|recipe_category_format }}</h2>
                 <ul>
                     {% for recipe in recipes %}
                         <li><a href="{{ recipe.slug }}.html">{{ recipe.name }}</a></li>
                     {% endfor %}
                 </ul>
-            {% endfor %}
             </div>
-        </div>
+        {% endfor %}
     </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

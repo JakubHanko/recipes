@@ -11,7 +11,7 @@ category: Main Course
 - 625 g (4½ cups) flour
 - 2 tsp salt
 - 2 tbsp olive oil
-- 420 mL (1¾ hrnčeka) lukewarm to cold water
+- 420 mL (1¾ cups) lukewarm to cold water
 
 ## Instructions
 1. Put the water into a mixing bowl. Sprinkle yeast and let it dissolve (about 2 minutes).

@@ -1,0 +1,36 @@
+body {
+    background-color: #f5f5f5;
+}
+.recipe-image {
+    max-width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.recipe-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+}
+h1, h2 {
+    color: #0056b3;
+}
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.btn-primary:hover {
+    background-color: #003f84;
+    border-color: #003f84;
+}
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
