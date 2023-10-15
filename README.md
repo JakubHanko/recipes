@@ -2,13 +2,10 @@
 
 ## Todo
 
-* Try the following recipes
-  * [ ] Lotus cheesecake
-  * [ ] Reese's cheesecake
-  * [ ] Toffifee cheesecake
-* [ ] Refactor compile.py
+* [x] Refactor compile.py
+* [ ] Move the recipe_*.py files into a separate folder?
 * [ ] Style of the webpages
-* [ ] Image support
+* [x] Image support
 * [ ] Short description into README
-* [ ] Sorting and grouping of the recipes
+* [x] Sorting and grouping of the recipes
 * [ ] Recipe tags?
