@@ -48,4 +48,8 @@ if __name__ == "__main__":
     )
 
     if os.path.exists(os.path.join("recipes", "img")):
-        shutil.copytree(os.path.join("recipes", "img"), os.path.join(output_dir, "img"))
+        shutil.copytree(
+            os.path.join("recipes", "img"),
+            os.path.join(output_dir, "img"),
+            dirs_exist_ok=True,
+        )
