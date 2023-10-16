@@ -11,7 +11,7 @@ from recipe_writer import write_index, write_recipes
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--deploy', required=False, action='store_true')
+    parser.add_argument("--deploy", required=False, action="store_true")
     deploy_on = parser.parse_args().deploy
 
     recipe_filenames = glob.glob("recipes/*.md")
@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     env = Environment(loader=PackageLoader("compile"), autoescape=select_autoescape())
     env.filters["recipe_category_format"] = recipe_category_format
-    env.globals['path_base'] = '' if deploy_on else '../templates/'
+    env.globals["path_base"] = "" if deploy_on else "../templates/"
 
     if not os.path.exists("docs/"):
         os.makedirs("docs")
