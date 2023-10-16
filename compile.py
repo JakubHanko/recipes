@@ -1,4 +1,3 @@
-import argparse
 import glob
 import json
 import os
@@ -12,10 +11,6 @@ from recipe_engine.parser import parse_recipe_file
 from recipe_engine.writer import write_index, write_recipes
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--deploy", required=False, action="store_true")
-    deploy_on = parser.parse_args().deploy
-
     with open("config.json") as f:
         config = json.load(f)
 
@@ -32,7 +27,6 @@ if __name__ == "__main__":
 
     env = Environment(loader=PackageLoader("compile"), autoescape=select_autoescape())
     env.filters["recipe_category_format"] = recipe_category_format
-    env.globals["path_base"] = "" if deploy_on else "../templates/"
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
