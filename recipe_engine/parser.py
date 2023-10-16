@@ -82,8 +82,7 @@ def get_recipe_image_path(document: Document) -> str | None:
             img = node.children[0]
             assert type(img) is Image
 
-            # The resulting templates get rendered to docs/ -- hence the '..'
-            return f"{os.path.join('..', 'recipes', img.dest)}"
+            return img.dest
 
     return None
 

@@ -43,4 +43,9 @@ if __name__ == "__main__":
 
     write_index(env, recipes_dict, output_dir)
 
-    shutil.copyfile("templates/styles.css", "docs/styles.css")
+    shutil.copyfile(
+        os.path.join("templates", "styles.css"), os.path.join(output_dir, "styles.css")
+    )
+
+    if os.path.exists(os.path.join("recipes", "img")):
+        shutil.copytree(os.path.join("recipes", "img"), os.path.join(output_dir, "img"))
