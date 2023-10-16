@@ -3,7 +3,7 @@
 ## Todo
 
 * [x] Refactor compile.py
-* [ ] Move the recipe_*.py files into a separate folder?
+* [x] Move the recipe_*.py files into a separate folder?
 * [ ] Style of the webpages
 * [x] Image support
 * [ ] Short description into README

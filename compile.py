@@ -7,9 +7,9 @@ import sys
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
-from recipe_model import Recipe, RecipeCategory, recipe_category_format
-from recipe_parser import parse_recipe_file
-from recipe_writer import write_index, write_recipes
+from recipe_engine.model import Recipe, RecipeCategory, recipe_category_format
+from recipe_engine.parser import parse_recipe_file
+from recipe_engine.writer import write_index, write_recipes
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

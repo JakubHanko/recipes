@@ -5,7 +5,7 @@ import marko
 from marko.block import Document, Heading, List, ListItem, Paragraph
 from marko.inline import Image, RawText
 
-from recipe_model import Recipe, RecipeCategory
+from recipe_engine.model import Recipe, RecipeCategory
 
 NAME_HEADING_LEVEL = 1
 

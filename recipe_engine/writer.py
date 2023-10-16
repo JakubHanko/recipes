@@ -2,7 +2,7 @@ import os
 
 from jinja2 import Environment
 
-from recipe_model import Recipe, RecipeCategory
+from recipe_engine.model import Recipe, RecipeCategory
 
 
 def write_recipes(
