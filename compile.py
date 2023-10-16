@@ -15,7 +15,7 @@ if __name__ == "__main__":
         config = json.load(f)
 
     if not config.get("output_dir"):
-        sys.exit("Missing 'config.json' file.")
+        sys.exit("Missing 'output_dir' key in the configuration file.")
 
     output_dir = config["output_dir"]
 
