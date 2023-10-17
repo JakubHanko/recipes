@@ -6,3 +6,4 @@
 * Change output_dir in `config.json` to your desired output folder where the pages will be generated.
 * Upload the recipes to `recipes/` using the format described by `template.md`.
 * If needed, upload the images to `recipes/img/`.
+* Compile with `python3 compile.py`
