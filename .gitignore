@@ -1,5 +1,4 @@
-__pycache__/
-test.html
 .DS_Store
-*.html
+.venv/
+__pycache__/
 docs/
