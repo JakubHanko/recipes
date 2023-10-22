@@ -1,6 +1,6 @@
 import os
 
-import frontmatter  # type: ignore
+import frontmatter
 import marko
 from marko.block import Document, Heading, List, ListItem, Paragraph
 from marko.inline import Image, RawText
@@ -15,6 +15,7 @@ def get_recipe_name(document: Document) -> str:
         if type(node) is Heading and node.level == NAME_HEADING_LEVEL:
             rawtext = node.children[0]
             assert type(rawtext) is RawText
+            assert isinstance(rawtext.children, str)
 
             return rawtext.children
 
@@ -81,6 +82,7 @@ def get_recipe_image_path(document: Document) -> str | None:
         if type(node) is Paragraph:
             img = node.children[0]
             assert type(img) is Image
+            assert isinstance(img.dest, str)
 
             return img.dest
 
