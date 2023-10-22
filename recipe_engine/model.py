@@ -1,15 +1,15 @@
 from dataclasses import dataclass
-from enum import Enum
+from enum import Enum, auto
 
 
 class RecipeCategory(Enum):
-    APPETIZER = 1
-    MAIN_COURSE = 2
-    DESSERT = 3
-    SALAD = 4
-    SOUP = 5
-    BREAKFAST = 6
-    OTHER = 7
+    APPETIZER = auto()
+    MAIN_COURSE = auto()
+    DESSERT = auto()
+    SALAD = auto()
+    SOUP = auto()
+    BREAKFAST = auto()
+    OTHER = auto()
 
 
 @dataclass
