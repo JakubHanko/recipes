@@ -21,6 +21,6 @@ category: Dessert
 
 ## Instructions
 1. Whisk together eggs and sugar.
-2. Add milk, oil, jam, yoghurt and combine.
-3. Mix dry ingredients and put it into the egg mixture.
+2. Add milk, oil, jam, yoghurt into the egg mixture and combine.
+3. Mix dry ingredients and put them into the egg mixture.
 4. Bake in preheated oven at 170 °C for around 60 minutes. 
