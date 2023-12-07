@@ -10,12 +10,12 @@ category: Dessert
 
 ## Ingredients
 - 2 eggs
-- 1 cup granulated sugar (200 g)
-- 1 cup milk (200 mL)
-- 1 cup vegetable oil (200 mL)
+- 1 cup granulated sugar
+- 1 cup milk
+- 1 cup vegetable oil
 - 3 topped tbsp plum jam (80 g)
 - 3 topped tsp plain yoghurt (50 g)
-- 1 cup flour (200 g)
+- 2 cups flour 
 - 3 topped tbsp gingerbread seasoning
 - 1 baking powder
 
